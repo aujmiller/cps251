@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">TipCalculatorProject</string>
+    <string name="button1">Calculate Tip</string>
+    <string name="billAmount">Enter Bill Total</string>
+    <string name="output">Tip Amounts Will Display Here</string>
+    <string name="error"> Error: Must Enter a Bill Value! </string>
+    <string name="outputHeader"> Your tips are as follows: </string>
+
+</resources>
