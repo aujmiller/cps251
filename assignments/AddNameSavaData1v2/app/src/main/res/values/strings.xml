@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">AddNameSavaData1v2</string>
+    <string name="button">Add Name</string>
+    <string name="returnText">No Names to Display</string>
+    <string name="inputText">Enter Name</string>
+    <string name="inputHint">Enter a Name</string>
+    <string name="errorMessage">No Name Entered</string>
+</resources>
