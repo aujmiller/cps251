@@ -17,8 +17,6 @@ class MainActivity : AppCompatActivity() {
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
         binding = ActivityMainBinding.inflate(layoutInflater)
 
-        // this line re-calls getResult() to output that text after rotation!
-        // onCreate is called after rotation because the activity has to be rebuilt
         binding.textView.text = viewModel.getName()
 
         binding.button.setOnClickListener{
