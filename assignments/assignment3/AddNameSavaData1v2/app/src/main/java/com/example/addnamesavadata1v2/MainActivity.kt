@@ -2,7 +2,7 @@ package com.example.addnamesavadata1v2
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import  com.example.addnamesavadata1v2.databinding.ActivityMainBinding
+import com.example.addnamesavadata1v2.databinding.ActivityMainBinding
 import androidx.lifecycle.ViewModelProvider
 
 class MainActivity : AppCompatActivity() {
