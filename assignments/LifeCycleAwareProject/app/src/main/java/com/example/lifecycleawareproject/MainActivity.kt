@@ -15,7 +15,6 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
 
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
 
@@ -24,8 +23,8 @@ class MainActivity : AppCompatActivity() {
         binding.lifecycleOwner = this
         binding.setVariable(myViewModel, viewModel)
 
-
-       // binding.lifecycleLog.text = viewModel.getLifecycleEvents().toString()
+        binding.lifecycleOwner = this
+        binding.myViewModel = viewModel
 
         val lifecycleObserver = Observer(viewModel)
         lifecycle.addObserver(lifecycleObserver)

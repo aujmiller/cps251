@@ -1,18 +1,20 @@
 package com.example.lifecycleawareproject
 
-import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 
 class MainViewModel : ViewModel() {
 
-    var lifecycleEvents: MutableLiveData<String> = MutableLiveData()
+    val lifecycleEvents: MutableLiveData<String> = MutableLiveData()
+
+    init {
+        lifecycleEvents.value = ""
+    }
 
     fun addLifecycleEvent(event: String) {
-        val currentTime = System.currentTimeMillis()
-        // lifecycleEvents.add("$event: $currentTime")
-
-
+        val currentEvents = lifecycleEvents.value
+        val updatedEvents = "$currentEvents\n$event"
+        lifecycleEvents.value = updatedEvents + "\n*****"
     }
 
 
