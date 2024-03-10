@@ -23,11 +23,11 @@ class Observer(private val viewModel: MainViewModel) : DefaultLifecycleObserver 
     }
 
     override fun onResume(owner: LifecycleOwner) {
-        viewModel.addLifecycleEvent("onResume was fired at: " + getTime())
+        viewModel.addLifecycleEvent("onResume was fired at: " + getTime() + "\n******")
     }
 
     override fun onPause(owner: LifecycleOwner) {
-        viewModel.addLifecycleEvent("onPause was fired at: " + getTime())
+        viewModel.addLifecycleEvent("onPause was fired at: " + getTime() + "\n******")
     }
 
     override fun onStop(owner: LifecycleOwner) {
@@ -35,7 +35,7 @@ class Observer(private val viewModel: MainViewModel) : DefaultLifecycleObserver 
     }
 
     override fun onDestroy(owner: LifecycleOwner) {
-        viewModel.addLifecycleEvent("onDestroy was fired at: " + getTime())
+        viewModel.addLifecycleEvent("onDestroy was fired at: " + getTime() + "\n******")
     }
 
 

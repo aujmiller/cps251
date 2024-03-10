@@ -14,7 +14,7 @@ class MainViewModel : ViewModel() {
     fun addLifecycleEvent(event: String) {
         val currentEvents = lifecycleEvents.value
         val updatedEvents = "$currentEvents\n$event"
-        lifecycleEvents.value = "$updatedEvents\n*****"
+        lifecycleEvents.value = updatedEvents
     }
 
 
