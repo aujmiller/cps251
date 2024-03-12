@@ -15,16 +15,14 @@ class MainActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
 
         super.onCreate(savedInstanceState)
-
         binding = DataBindingUtil.setContentView(this,R.layout.activity_main)
-
         viewModel = ViewModelProvider(this)[MainViewModel::class.java]
 
         binding.lifecycleOwner = this
         binding.setVariable(myViewModel, viewModel)
 
-        binding.lifecycleOwner = this
-        binding.myViewModel = viewModel
+        // binding.lifecycleOwner = this
+        // binding.myViewModel = viewModel
 
         val lifecycleObserver = Observer(viewModel)
         lifecycle.addObserver(lifecycleObserver)
