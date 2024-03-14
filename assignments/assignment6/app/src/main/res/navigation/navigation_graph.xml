@@ -25,7 +25,7 @@
             android:defaultValue="text" />
         <argument
             android:name="imageNumber"
-            app:argType="int"
+            app:argType="string"
             android:defaultValue="image" />
     </fragment>
 </navigation>

@@ -5,10 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
-
-import com.example.navigationproject.databinding.Fragment1Binding
 import com.example.navigationproject.databinding.Fragment2Binding
-
 import android.net.Uri
 
 class Fragment2 : Fragment() {
@@ -33,7 +30,7 @@ class Fragment2 : Fragment() {
         arguments?.let {
             val argsText = Fragment2Args.fromBundle(it)
             binding.textView.text = argsText.textBox
-            val argsImage = Fragment2Args.fromBundle(requireArguments()).imageNumber
+            val argsImage = argsText.imageNumber.toIntOrNull() ?: 0
             binding.imageView4.setImageResource(argsImage)
         }
     }
