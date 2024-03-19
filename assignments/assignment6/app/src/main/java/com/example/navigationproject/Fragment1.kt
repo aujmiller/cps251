@@ -23,6 +23,9 @@ class Fragment1 : Fragment() {
 
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
+        binding.imageView.setImageResource(R.drawable.android_image_1)
+        binding.imageView2.setImageResource(R.drawable.android_image_2)
+        binding.imageView3.setImageResource(R.drawable.android_image_3)
         binding.button1.setOnClickListener {
             val action: Fragment1Directions.MainToSecond = Fragment1Directions.mainToSecond()
             action.textBox = "Image 1"
@@ -49,10 +52,3 @@ class Fragment1 : Fragment() {
     }
 
 }
-
-//            val actionText: Fragment1Directions.MainToSecond = Fragment1Directions.mainToSecond()
-//            actionText.textBox = "Image 1"
-//            val actionImage: Fragment1Directions.MainToSecond = Fragment1Directions.mainToSecond()
-//            actionImage.imageNumber = R.drawable.android_image_1
-//            Navigation.findNavController(it).navigate(actionText)
-//            Navigation.findNavController(it).navigate(actionImage)
