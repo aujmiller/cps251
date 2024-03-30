@@ -2,8 +2,6 @@ package edu.wccnet.mmorgan8.carddemo
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
-import android.view.Menu
-import android.view.MenuItem
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import edu.wccnet.mmorgan8.carddemo.databinding.ActivityMainBinding
