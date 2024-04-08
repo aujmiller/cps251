@@ -24,4 +24,6 @@ class MainActivity : AppCompatActivity() {
         binding.contentMain.recyclerView.adapter = adapter
     }
 
+
+
 }
