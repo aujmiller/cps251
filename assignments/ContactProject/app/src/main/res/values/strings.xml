@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Contact Project</string>
+    <string name="addButton">Add</string>
+    <string name="findButton">Find</string>
+    <string name="ascButton">Asc</string>
+    <string name="descButton">Desc</string>
+    <string name="enter_name">Enter Name</string>
+    <string name="enter_phone_number">Enter Phone Number</string>
+    <string name="textview">TextView</string>
+    <string name="contactname">contactName</string>
+    <string name="phone_number">Phone Number</string>
+    <string name="contact_name">Contact Name</string>
+    <string name="image_description">image of a trash can that serves as a delete</string>
+</resources>
